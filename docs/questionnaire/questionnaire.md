@@ -1,6 +1,6 @@
 # IRO Community Questionnaire (Google Form)
 
-**Google Form link:** _to be added_
+**Google Form link:** https://docs.google.com/forms/d/e/1FAIpQLSfNxcsxj_8lGEy8-hLIunrGbpO-oMTkLg9Fx9R_VG9yFxxaCQ/viewform
 
 The form branches by respondent type: **AAUA Students** answer Section A, **Indigenes / Residents** answer Section B, and both answer Section C. The form was built with `create_form.gs` (Google Apps Script).
 

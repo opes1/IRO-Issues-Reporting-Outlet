@@ -5,6 +5,10 @@ A mini web-based system for **relating and reporting issues concerning AAUA stud
 **Course:** CSC426 – Weekly Dev, Weekend 3 · **Lecturer:** Dr. O. O. Ajayi
 **Developer:** Opeyemi Oyinlola · Computer Science, Adekunle Ajasin University, Akungba-Akoko
 
+## Links
+- **Live app:** https://opes1.github.io/iro-issues-reporting-outlet/
+- **Questionnaire (Google Form):** https://docs.google.com/forms/d/e/1FAIpQLSfNxcsxj_8lGEy8-hLIunrGbpO-oMTkLg9Fx9R_VG9yFxxaCQ/viewform
+
 ## Features
 - Report an issue as an **AAUA Student** or an **Indigene / Resident**
 - **Anonymous reporting** for sensitive issues
