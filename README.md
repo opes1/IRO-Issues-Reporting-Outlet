@@ -33,7 +33,8 @@ app/                      Web interface (HTML, CSS, JavaScript)
   assets/app.js           Issue, IssueStore, Auth classes + page logic
 docs/
   IRO_SRS.docx            Software Requirements Specification (FR & NFR)
-  IRO_Object_and_Code_Listing.docx
+  IRO_Object_Listing.docx   Object listing + GitHub code links
+  IRO_Print_Pack.pdf      Everything for printing in one file
   diagrams/
     ishikawa_iro.drawio   Ishikawa (fishbone) diagram – opens in draw.io
     usecase_iro.drawio    Use-case diagram – opens in draw.io
