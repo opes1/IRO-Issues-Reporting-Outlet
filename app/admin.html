@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard – IRO</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <a class="brand" href="index.html">I<span>R</span>O</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="report.html">Report Issue</a></li>
+        <li><a href="track.html">Track Issue</a></li>
+        <li><a href="admin.html" class="active">Admin</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Login -->
+    <section id="loginSection">
+      <h1>Admin Login</h1>
+      <p class="hint" style="margin-bottom:20px">For the IRO desk (university &amp; community liaison officers).</p>
+      <div id="loginMessage" class="hidden"></div>
+      <form id="loginForm" class="card" style="max-width:420px">
+        <div class="field">
+          <label for="username">Username</label>
+          <input id="username" type="text" required>
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <input id="password" type="password" required>
+        </div>
+        <button type="submit" class="btn btn-green">Log in</button>
+        <p class="hint" style="margin-top:10px">Demo login: admin / iro2026</p>
+      </form>
+    </section>
+
+    <!-- Dashboard -->
+    <section id="dashboard" class="hidden">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:16px">
+        <h1>Issues Dashboard</h1>
+        <button id="logoutBtn" class="btn btn-danger btn-sm">Log out</button>
+      </div>
+
+      <div class="stats" id="stats"></div>
+
+      <div class="filters">
+        <select id="fStatus"></select>
+        <select id="fType"></select>
+        <select id="fCategory"></select>
+        <input id="fSearch" type="search" placeholder="Search title, ID…">
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>ID</th><th>Issue</th><th>Reporter</th><th>Category</th><th>Priority</th><th>Status</th><th>Action</th></tr>
+          </thead>
+          <tbody id="issueRows"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>&copy; 2026 IRO – Issues Reporting Outlet · CSC426 Project</footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>

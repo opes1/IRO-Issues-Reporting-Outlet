@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report an Issue – IRO</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <a class="brand" href="index.html">I<span>R</span>O</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="report.html" class="active">Report Issue</a></li>
+        <li><a href="track.html">Track Issue</a></li>
+        <li><a href="admin.html">Admin</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Report an Issue</h1>
+    <p class="hint" style="margin-bottom:20px">Fields marked * are required. Tick "Report anonymously" to hide your identity.</p>
+
+    <div id="formMessage" class="hidden"></div>
+
+    <form id="reportForm" class="card" novalidate>
+      <div class="field">
+        <label>I am a: *</label>
+        <div class="check">
+          <input type="radio" id="typeStudent" name="reporterType" value="Student">
+          <label for="typeStudent" style="margin:0;font-weight:400">AAUA Student</label>
+          <input type="radio" id="typeIndigene" name="reporterType" value="Indigene" style="margin-left:16px">
+          <label for="typeIndigene" style="margin:0;font-weight:400">Indigene / Resident</label>
+        </div>
+      </div>
+
+      <div class="check">
+        <input type="checkbox" id="anonymous">
+        <label for="anonymous" style="margin:0">Report anonymously</label>
+      </div>
+
+      <div id="identityFields" class="row">
+        <div class="field">
+          <label for="name">Full name</label>
+          <input id="name" type="text" placeholder="e.g. Adebayo Tunde">
+        </div>
+        <div class="field">
+          <label for="phone">Phone number</label>
+          <input id="phone" type="tel" placeholder="08012345678">
+        </div>
+      </div>
+
+      <div id="studentFields" class="row hidden">
+        <div class="field">
+          <label for="matricNo">Matric number (optional)</label>
+          <input id="matricNo" type="text" placeholder="e.g. 220403XXX">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label for="community" id="communityLabel">Your community *</label>
+          <select id="community"></select>
+        </div>
+        <div class="field">
+          <label for="category">Issue category *</label>
+          <select id="category"></select>
+        </div>
+        <div class="field">
+          <label for="priority">Priority</label>
+          <select id="priority"></select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="title">Issue title *</label>
+        <input id="title" type="text" maxlength="100" placeholder="Short summary of the issue">
+      </div>
+
+      <div class="field">
+        <label for="location">Specific location</label>
+        <input id="location" type="text" placeholder="e.g. Ibaka Street, near Mini Campus gate">
+      </div>
+
+      <div class="field">
+        <label for="description">Description *</label>
+        <textarea id="description" placeholder="Describe what happened, when, and who is affected (min. 20 characters)"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-green">Submit Issue</button>
+    </form>
+  </main>
+
+  <footer>&copy; 2026 IRO – Issues Reporting Outlet · CSC426 Project</footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>

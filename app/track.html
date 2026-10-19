@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Track an Issue – IRO</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <a class="brand" href="index.html">I<span>R</span>O</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="report.html">Report Issue</a></li>
+        <li><a href="track.html" class="active">Track Issue</a></li>
+        <li><a href="admin.html">Admin</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Track an Issue</h1>
+    <p class="hint" style="margin-bottom:20px">Enter the tracking ID you received after submitting your report.</p>
+
+    <form id="trackForm" class="card" style="margin-bottom:20px">
+      <div class="field">
+        <label for="trackId">Tracking ID</label>
+        <input id="trackId" type="text" placeholder="e.g. IRO-7KQ2MX" required>
+      </div>
+      <button type="submit" class="btn btn-green">Check Status</button>
+    </form>
+
+    <div id="trackResult"></div>
+  </main>
+
+  <footer>&copy; 2026 IRO – Issues Reporting Outlet · CSC426 Project</footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>
